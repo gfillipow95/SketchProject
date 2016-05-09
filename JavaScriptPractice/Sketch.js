@@ -20,11 +20,16 @@ $(document).ready(function(){
 
    createBoard(16);
    changeColor();
-   
-   $("button").click(function(){
+
+   $("#clearButton").click(function(){
       var size = prompt("Please enter the size of board");
       $("#container").empty();
       createBoard(size);
       changeColor();
    });
+
+   $("#resetButton").click(function(){
+      $(".square").css("background-color", "blue");
+      changeColor();
+   })
 });
