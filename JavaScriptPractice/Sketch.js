@@ -21,7 +21,7 @@ $(document).ready(function(){
    createBoard(16);
    changeColor();
 
-   $("#clearButton").click(function(){
+   $("#changeButton").click(function(){
       var size = prompt("Please enter the size of board");
       $("#container").empty();
       createBoard(size);
